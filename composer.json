@@ -1,0 +1,14 @@
+{
+    "name": "nwdeer/mbi.spb.hse.ru",
+    "description": "Innovation in Managment and Business",
+    "type": "project",
+    "require": {
+        "twig/twig": "^1.30.0"
+    },
+    "authors": [
+        {
+            "name": "Pavel Sharypov",
+            "email": "pavloniym@gmail.com"
+        }
+    ]
+}
