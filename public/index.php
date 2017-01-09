@@ -36,7 +36,7 @@ $act_par = explode("/", (strpos($_SERVER['REQUEST_URI'], "?") === false ? $_SERV
 
 
 //Определяем, есть ли такой модуль
-$ACTUAL_PAGE = "2017";
+$ACTUAL_PAGE = "2015";
 $page_file_name = $act_par[1] ?: $ACTUAL_PAGE;
 
 if (!file_exists("../pages/" . $page_file_name . ".php")) {
