@@ -32,7 +32,7 @@ html.js .loader
 		position: absolute
 
 body
-	font-family: $helvetica
+	font-family: $font, $helvetica
 	font-weight: 400
 	font-size: 16px
 	min-width: 320px
@@ -53,7 +53,6 @@ body textarea:required:valid
 
 
 .headers
-	font-family: $helvetica
 	font-weight: normal
 	margin: 0
 
@@ -133,7 +132,20 @@ section
 	&:hover
 		opacity: 1
 
+
+.txt-main-color
+	color: $color-blue
+
 @import "header"
+
+@import "blocks/head"
+@import "blocks/callforpapers"
+@import "blocks/objectives"
+@import "blocks/speakers"
+@import "blocks/dates"
+
+@import "blocks/footer"
+
 
 /** HAMBURGER-BUTTON **/
 @import "hamburger"
