@@ -1,0 +1,52 @@
+{% set people = [
+
+[
+['Daniil Alexandrov', 'HSE University in St. Petersburg'],
+['Christopher Gerry', 'HSE University in St. Petersburg'],
+['Valery Gordin', 'HSE University in St. Petersburg'],
+['Elena Gruzinskaya', 'HSE University in St. Petersburg'],
+['Natalia Alyoshina', 'HSE University in St. Petersburg'],
+['Olga Okulova ', 'HSE University in St. Petersburg'],
+
+],
+
+[
+['Vitalii Lipatnikov', 'HSE University in St. Petersburg'],
+['Elena Rogova', 'HSE University in St. Petersburg'],
+['Elena Serova', 'HSE University in St. Petersburg'],
+['Olga Khon', 'HSE University in St. Petersburg'],
+['Elena Shakina', 'HSE University in St. Petersburg'],
+]
+
+
+] %}
+
+
+<section class="organizers">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12"><h2>Organising Committee</h2></div>
+            <div class="col-sm-3 col-sm-offset-3 col-xs-offset-0">
+                <ul>
+                    {% for key,person in people[0] %}
+                        <li>
+                            <div class="name">{{ person[0] }}</div>
+                            <div class="university">{{ person[1] }}</div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="col-sm-3 right-align">
+                <ul>
+                    {% for key,person in people[1] %}
+                        <li>
+                            <div class="name">{{ person[0] }}</div>
+                            <div class="university">{{ person[1] }}</div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

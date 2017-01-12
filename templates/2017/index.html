@@ -2,7 +2,7 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
 <head>
 
@@ -11,10 +11,10 @@
 	<title>BRICS Global Business & Innovation Conference</title>
 	<meta name="description" content='International Conference "BRICS Global Business & Innovation Conference"'>
 
-	<link rel="shortcut icon" href="{{ static("/2017/img/favicon/favicon.ico") }}" type="image/x-icon">
+	{#<link rel="shortcut icon" href="{{ static("/2017/img/favicon/favicon.ico") }}" type="image/x-icon">
 	<link rel="apple-touch-icon" href="{{ static("/2017/img/favicon/apple-touch-icon.png") }}">
 	<link rel="apple-touch-icon" sizes="72x72" href="{{ static("/2017/img/favicon/apple-touch-icon-72x72.png") }}">
-	<link rel="apple-touch-icon" sizes="114x114" href="{{ static("/2017/img/favicon/apple-touch-icon-114x114.png") }}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ static("/2017/img/favicon/apple-touch-icon-114x114.png") }}">#}
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -37,20 +37,14 @@
 
 
 	{% include "/2017/components/header.html" %}
-
 	{% include "/2017/components/callForPapers.html" %}
 	{% include "/2017/components/objectives.html" %}
 	{% include "/2017/components/speakers.html" %}
+	{% include "/2017/components/topicareas.html" %}
 	{% include "/2017/components/dates.html" %}
-
-
-	{#
-	{% include "/2017/components/benefits.html" %}
-	{% include "/2017/components/dist.html" %}
-	{% include "/2017/components/cta.html" %}
-	{% include "/2017/components/programm.html" %}
-	{% include "/2017/components/sign.html" %}#}
-
+	{% include "/2017/components/submissions_details.html" %}
+	{% include "/2017/components/organizers.html" %}
+	{% include "/2017/components/publications.html" %}
 	<footer>{% include "/2017/components/footer.html" %}</footer>
 
 	<div id="scroller" class="hidden-md"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
